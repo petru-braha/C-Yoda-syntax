@@ -1,6 +1,7 @@
 # Yoda notation
 
 input: large text
+
 output: same text with `conditions` - correct accidental assignements in code
 
 ## conditions
