@@ -1,18 +1,18 @@
 # Yoda notation
 
-## input: large text
-## output: same text with 'conditions' - correct accidental assignements in code
+input: large text
+output: same text with `conditions` - correct accidental assignements in code
 
 ## conditions
-- centred only on the following relational operators: '=' '==' '!=' 
-- in an expression the order of parameters is: 'constant then object'
-- no modifications for 'constant then constant' statements
-- a 'constant' is a rvalue, anything like:
+- centred only on the following relational operators: `=` `==` `!=` 
+- in an expression, the order of parameters is: `constant then object`
+- no modifications for `constant then constant` statements
+- a `constant` is a rvalue, anything like:
 	- const primitive/non-primitive
 	- pointer to functions
 	- preprocessed variables
 	- typeid
-- statements to consider: 'if' 'while' 'for' 'condition operator - ?' 
+- statements to consider: `if` `while` `for` `condition operator - ?`
 
 ## steps
 - assume there are no syntax/semantic errors
