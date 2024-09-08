@@ -1,11 +1,9 @@
 # Yoda notation
 
-@input: large text
-@output: same text with conditions - correct accidental assignements in code
+## input: large text
+## output: same text with 'conditions' - correct accidental assignements in code
 
-@conditions:
-
-0. definition:
+## conditions
 - centred only on the following relational operators: '=' '==' '!=' 
 - in an expression the order of parameters is: 'constant then object'
 - no modifications for 'constant then constant' statements
@@ -16,7 +14,7 @@
 	- typeid
 - statements to consider: 'if' 'while' 'for' 'condition operator - ?' 
 
-1. my code will:
+## steps
 - assume there are no syntax/semantic errors
 - store constant names
 - read the text in chunks
@@ -24,7 +22,7 @@
 - determine accidental assignments and ask the user for improvement
 - print on standard output the result
 
-2. log:
+## log
 - no: discard any adjustment if the output of the code is different
 - no: other operators => redability, purposeless
 - no: run an entire project
