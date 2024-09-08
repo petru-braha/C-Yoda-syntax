@@ -7,23 +7,29 @@
 
 0. definition:
 - centred only on the following relational operators: '=' '==' '!=' 
-- in a binary boolean expression the order of parameters is: 'constant then object'
+- in an expression the order of parameters is: 'constant then object'
 - no modifications for 'constant then constant' statements
 - a 'constant' is a rvalue, anything like:
 	- const primitive/non-primitive
 	- pointer to functions
 	- preprocessed variables
-- statements to consider:
-	- conditional: any 'if' 'else' 'while' 'for' '? operator' 
+	- typeid
+- statements to consider: 'if' 'while' 'for' 'condition operator - ?' 
 
 1. my code will:
-- revert actual 
+- assume there are no syntax/semantic errors
+- store constant names
+- read the text in chunks
+- modify each chunk individually, if needed
 - determine accidental assignments and ask the user for improvement
+- print on standard output the result
 
-2. new challenges:
-- chained notation: 3 < y < 4 (e. g. pyton)
-- '!==', '===' operators (e. g. javascript)
-
-3. extra talk:
+2. log:
 - no: discard any adjustment if the output of the code is different
-- no other operators => redability, purposeless
+- no: other operators => redability, purposeless
+- no: run an entire project
+- i assumed that every operator problem can appear only in if while for ? statements. it was wrong
+- inspiration 
+	- https://www.geeksforgeeks.org/what-is-the-efficient-way-of-reading-a-huge-text-file/
+	- https://cplusplus.com/forum/unices/13699/
+	
